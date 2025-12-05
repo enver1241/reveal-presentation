@@ -2,27 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>My Reveal.js Presentation</title>
+    <title>Reveal.js Presentation</title>
 
+    <!-- Reveal.js temel stil dosyası -->
     <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css" />
-    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/moon.css" id="theme" />
+
+    <!-- Varsayılan olmayan tema: MOON -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/reveal.js/dist/theme/moon.css"
+      id="theme"
+    />
+
+    <!-- (İsteğe bağlı) Kod renklendirme için -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css"
+    />
   </head>
 
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown="slides.md"
-         data-separator="^---$"
-         data-separator-vertical="^--$">
+        <!-- Tüm slaytlar slides.md dosyasından gelecek -->
+        <section
+          data-markdown="slides.md"
+          data-separator="^---$"
+          data-separator-vertical="^--$"
+          data-charset="utf-8"
+        >
+        </section>
+      </div>
+    </div>
 
-
+    <!-- Reveal.js script dosyası -->
     <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+
+    <!-- Markdown ve highlight pluginleri -->
     <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
 
     <script>
       Reveal.initialize({
-        plugins: [RevealMarkdown],
-        hash: true
+        hash: true,            // URL'de slayt numarası gözüksün
+        slideNumber: true,     // Slayt numaraları açılsın
+        progress: true,        // Altta ilerleme çubuğu
+        transition: "slide",   // Geçiş animasyonu
+
+        plugins: [RevealMarkdown, RevealHighlight],
       });
     </script>
   </body>
