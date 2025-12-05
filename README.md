@@ -6,8 +6,7 @@ This repository contains a web-based presentation created using the **Reveal.js*
 
 ## 📌 Project Information
 **University:** Warsaw Management University  
-**Student:** Enver Gidici  
-**Student ID:** 77797  
+**Student:** Enver Gidici   
 **Course Assignment:** Web Presentation with Reveal.js  
 
 ---
