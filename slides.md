@@ -1,7 +1,7 @@
 # Building a Web Presentation with Reveal.js  
 **Warsaw Management University**  
 **Student:** Enver Gidici  
-**ID:** 77797  
+ 
 
 ![University Logo](logo.png)
 
